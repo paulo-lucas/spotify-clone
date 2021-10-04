@@ -1,0 +1,28 @@
+{
+  "data": {
+    "dark": {
+      "name": "Dark",
+      "id": 0,
+      "colors": {
+        "primary": "#6e27c5",
+        "secondary": "#ffb617",
+        "danger": "#f16623",
+        "light": "#f4f4f4",
+        "dark": "#222"
+      },
+      "font": "Montserrat"
+    },
+    "light": {
+      "name": "Light",
+      "id": 1,
+      "colors": {
+        "primary": "#ff0198",
+        "secondary": "#01c1d6",
+        "danger": "#eb238e",
+        "light": "#f4f4f4",
+        "dark": "#222"
+      },
+      "font": "Montserrat"
+    }
+  }
+}
