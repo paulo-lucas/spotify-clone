@@ -6,18 +6,22 @@ import { ImBooks } from "react-icons/im"
 import { AiFillPlusSquare } from "react-icons/ai"
 import { BsFillBookmarkHeartFill } from "react-icons/bs"
 
-import SidebarIconButton from "components/SidebarIconButton"
+import SidebarButton from "components/SidebarButton"
 
 const Sidebar = () => {
   return <Bar>
     <MainButtonsWrapper>
-      <SidebarIconButton icon={RiHome5Fill} label="Home" className="selected" />
-      <SidebarIconButton icon={FiSearch} label="Search" />
-      <SidebarIconButton icon={ImBooks} label="Your Library" />
+      <SidebarButton icon={RiHome5Fill} label="Home" bold className="selected" />
+      <SidebarButton icon={FiSearch} label="Search" bold />
+      <SidebarButton icon={ImBooks} label="Your Library" bold />
     </MainButtonsWrapper>
 
-    <SidebarIconButton icon={AiFillPlusSquare} label="Create Playlist" />
-    <SidebarIconButton icon={BsFillBookmarkHeartFill} label="Liked Songs" />
+    <PlaylistButtonsWraper>
+      <SidebarButton icon={AiFillPlusSquare} label="Create Playlist" bold />
+      <SidebarButton icon={BsFillBookmarkHeartFill} label="Liked Songs" bold />
+    
+      <Hr />
+    </PlaylistButtonsWraper>
   </Bar>
 }
 
@@ -30,6 +34,17 @@ const Bar = styled.nav`
 
 const MainButtonsWrapper = styled.div`
   padding: 24px 0;
+`
+
+const PlaylistButtonsWraper = styled.div`
+  padding: 24px 0;
+`
+
+const Hr = styled.hr`
+  margin: 16px;
+  color: ${({ theme }) => theme.colors.item.default};
+  opacity: 0.5;
+  border-bottom: none;
 `
 
 export default Sidebar

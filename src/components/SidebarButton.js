@@ -5,7 +5,7 @@ const SidebarIconButton = props => {
   const { icon: Icon, label } = props
 
   return <Button {...props} >
-    <IconWrapper><Icon size={24} /></IconWrapper>
+    {Icon && <IconWrapper><Icon size={24} /></IconWrapper>}
     {label}
   </Button>
 }
@@ -22,7 +22,7 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: ${({ bold }) => bold ? "700" : "regular"};
   transition: all .2s ease;
 
   &:hover {
