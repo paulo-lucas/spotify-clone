@@ -14,7 +14,10 @@ export const useTheme = () => {
 
   const getFonts = () => {
     const allFonts = _.values(_.mapValues(themes.data, 'font'));
-    return allFonts;
+    const allFontsAndWeights = allFonts.map(font => {
+      return `${font}:300,400,500,600,700,800,900`
+    })
+    return allFontsAndWeights;
   }
 
   useEffect(() =>{
