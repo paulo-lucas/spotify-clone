@@ -26,7 +26,7 @@ const Sidebar = () => {
       <SidebarButton label="Travel" />
         <SidebarButton label="Enjoy Summer" />
         <SidebarButton label="Party songs" />
-        <SidebarButton label="Gaming" flag={BsVolumeUp} onHoverFlag={BsPause} />
+        <SidebarButton label="Gaming" flag={BsVolumeUp} hoverFlag={BsPause} />
         <SidebarButton label="Fresh start" />
         <SidebarButton label="After midnight" />
         <SidebarButton label="Calm Days" />

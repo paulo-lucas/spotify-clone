@@ -30,9 +30,9 @@ export const useTheme = () => {
       clearFieldFromLS('theme')
     }
     
-    console.log(localTheme ? true : false)
     localTheme ? setTheme(localTheme) : setTheme(themes.data.dark);
     setThemeLoaded(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return { theme, themes, themeLoaded, setMode, getFonts };

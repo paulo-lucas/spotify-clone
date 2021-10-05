@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
-import _ from 'lodash';
 import { useTheme } from 'hooks/useTheme';
-import { getFromLS } from 'utils/storage';
 
 
 const ThemeSwitcher = ({ setter }) => {

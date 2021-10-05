@@ -7,7 +7,7 @@ const SidebarIconButton = props => {
   const {
     icon: Icon,
     flag: Flag,
-    onHoverFlag: OnHoverFlag,
+    hoverFlag: HoverFlag,
     label
   } = props
 
@@ -20,7 +20,7 @@ const SidebarIconButton = props => {
     {Flag && <FlagWrapper
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)} >
-      {(hover && OnHoverFlag) ? <OnHoverFlag size={24} /> : <Flag size={24} />}
+      {(hover && HoverFlag) ? <HoverFlag size={24} /> : <Flag size={24} />}
     </FlagWrapper>}
 
   </Button>

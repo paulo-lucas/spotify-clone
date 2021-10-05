@@ -16,6 +16,7 @@ function App() {
 
   useEffect(() => {
     setSelectedTheme(theme);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [themeLoaded])
 
   useEffect(() => {
