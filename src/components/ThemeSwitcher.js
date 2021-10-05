@@ -26,7 +26,8 @@ const ThemeSwitcher = ({ setter }) => {
   }
 
   return <Switch onClick={() => switchTo(getNextTheme())}>
-    ALTERAR TEMA
+    <p>Change theme</p>
+    <p>Current: {theme.name}</p>
   </Switch>
 }
 
@@ -37,9 +38,14 @@ const Switch = styled.button`
     transform: translateX(-50%);
     cursor: pointer;
     padding: 10px;
-    background-color: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.secondary};
-    border: 1px solid ${({ theme }) => theme.colors.dark};
+    background-color: ${({ theme }) => theme.colors.dark};
+    color: ${({ theme }) => theme.colors.light};
+    border: none;
+    border-radius: 5px;
+
+    p:first-child {
+      margin-bottom: 4px;
+    }
 `;
 
 export default ThemeSwitcher
