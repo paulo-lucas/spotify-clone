@@ -19,22 +19,34 @@ const Sidebar = () => {
     <PlaylistButtonsWraper>
       <SidebarButton icon={AiFillPlusSquare} label="Create Playlist" bold />
       <SidebarButton icon={BsFillBookmarkHeartFill} label="Liked Songs" bold />
-    
+
       <Hr />
 
+      <ScrollableWraper>
       <SidebarButton label="Travel" />
-      <SidebarButton label="Enjoy Summer" />
-      <SidebarButton label="Party songs" />
-      <SidebarButton label="Gaming" flag={BsVolumeUp} onHoverFlag={BsPause} />
-      <SidebarButton label="Fresh start" />
-      <SidebarButton label="After midnight" />
-      <SidebarButton label="Calm Days" />
-      <SidebarButton label="Comfort zone" />
-      <SidebarButton label="Country Summer Nights" />
-      <SidebarButton label="Coffee Alone" />
-      <SidebarButton label="Feel Good Songs" />
-      <SidebarButton label="Heart Waves" />
-
+        <SidebarButton label="Enjoy Summer" />
+        <SidebarButton label="Party songs" />
+        <SidebarButton label="Gaming" flag={BsVolumeUp} onHoverFlag={BsPause} />
+        <SidebarButton label="Fresh start" />
+        <SidebarButton label="After midnight" />
+        <SidebarButton label="Calm Days" />
+        <SidebarButton label="Back to 90s" />
+        <SidebarButton label="Country Summer Nights" />
+        <SidebarButton label="Coffee Alone" />
+        <SidebarButton label="Feel Good Songs" />
+        <SidebarButton label="Heart Waves" />
+        <SidebarButton label="Handmade Glory" />
+        <SidebarButton label="Acid Days" />
+        <SidebarButton label="Today’s feeling" />
+        <SidebarButton label="At Home" />
+        <SidebarButton label="I’m tired of Love" />
+        <SidebarButton label="Satanic Music" />
+        <SidebarButton label="Comfort zone" />
+        <SidebarButton label="Bonjour, Future" />
+        <SidebarButton label="Feeling Alive" />
+        <SidebarButton label="Musical Odyssey" />
+        <SidebarButton label="Chilled Soul" />
+      </ScrollableWraper>
     </PlaylistButtonsWraper>
   </Bar>
 }
@@ -52,6 +64,11 @@ const MainButtonsWrapper = styled.div`
 
 const PlaylistButtonsWraper = styled.div`
   padding: 24px 0;
+`
+
+const ScrollableWraper = styled.div`
+  height: 50vh;
+  overflow-y: auto;
 `
 
 const Hr = styled.hr`
