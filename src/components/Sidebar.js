@@ -67,12 +67,14 @@ const PlaylistButtonsWraper = styled.div`
 `
 
 const ScrollableWraper = styled.div`
+  padding-top: 16px;
   height: 50vh;
   overflow-y: auto;
 `
 
 const Hr = styled.hr`
-  margin: 16px;
+  box-shadow: -20px 0 10px 20px ${({ theme }) => theme.colors.dark};
+  margin: 16px 16px 0px 16px;
   color: ${({ theme }) => theme.colors.item.default};
   opacity: 0.5;
   border-bottom: none;
