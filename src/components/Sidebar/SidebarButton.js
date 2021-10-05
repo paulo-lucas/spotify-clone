@@ -46,7 +46,7 @@ const Button = styled.button`
   }
 
   &.selected {
-    background-color: ${({ theme }) => theme.colors.item.bgSelected};
+    background-color: ${({ theme }) => theme.colors.bgSelected};
     color: ${({ theme }) => theme.colors.text.active};
   }
 `
