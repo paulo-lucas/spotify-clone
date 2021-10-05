@@ -75,7 +75,7 @@ const ScrollableWraper = styled.div`
 const Hr = styled.hr`
   box-shadow: -20px 0 10px 20px ${({ theme }) => theme.colors.dark};
   margin: 16px 16px 0px 16px;
-  color: ${({ theme }) => theme.colors.item.default};
+  color: ${({ theme }) => theme.colors.text.default};
   opacity: 0.5;
   border-bottom: none;
 `

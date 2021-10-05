@@ -34,7 +34,7 @@ const Button = styled.button`
   outline: none;
   border: none;
   background-color: #00000000;
-  color: ${({ theme }) => theme.colors.item.default};
+  color: ${({ theme }) => theme.colors.text.default};
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -42,12 +42,12 @@ const Button = styled.button`
   transition: all .2s ease;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.item.active};
+    color: ${({ theme }) => theme.colors.text.active};
   }
 
   &.selected {
     background-color: ${({ theme }) => theme.colors.item.bgSelected};
-    color: ${({ theme }) => theme.colors.item.active};
+    color: ${({ theme }) => theme.colors.text.active};
   }
 `
 

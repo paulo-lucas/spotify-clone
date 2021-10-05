@@ -9,9 +9,11 @@
         "danger": "#f16623",
         "light": "#f4f4f4",
         "dark": "#000",
-        "item": {
+        "text": {
           "default": "#b3b3b3",
-          "active": "#ffffff",
+          "active": "#ffffff"
+        },
+        "item": {
           "bgSelected": "#FFFFFF22"
         }
       },
@@ -26,9 +28,11 @@
         "danger": "#eb238e",
         "light": "#f4f4f4",
         "dark": "#222",
-        "item": {
+        "text": {
           "default": "#b3b3b3",
-          "active": "#ffffff",
+          "active": "#ffffff"
+        },
+        "item": {
           "bgSelected": "#FFFFFF22"
         }
       },
