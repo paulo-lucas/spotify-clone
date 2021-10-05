@@ -6,7 +6,7 @@ import { ImBooks } from "react-icons/im"
 import { AiFillPlusSquare } from "react-icons/ai"
 import { BsFillBookmarkHeartFill, BsVolumeUp, BsPause } from "react-icons/bs"
 
-import SidebarButton from "components/SidebarButton"
+import SidebarButton from "components/Sidebar/SidebarButton"
 
 const Sidebar = () => {
   return <Bar>
