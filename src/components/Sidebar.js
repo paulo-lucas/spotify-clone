@@ -4,7 +4,7 @@ import { RiHome5Fill } from "react-icons/ri"
 import { FiSearch } from "react-icons/fi"
 import { ImBooks } from "react-icons/im"
 import { AiFillPlusSquare } from "react-icons/ai"
-import { BsFillBookmarkHeartFill } from "react-icons/bs"
+import { BsFillBookmarkHeartFill, BsVolumeUp, BsPause } from "react-icons/bs"
 
 import SidebarButton from "components/SidebarButton"
 
@@ -21,6 +21,20 @@ const Sidebar = () => {
       <SidebarButton icon={BsFillBookmarkHeartFill} label="Liked Songs" bold />
     
       <Hr />
+
+      <SidebarButton label="Travel" />
+      <SidebarButton label="Enjoy Summer" />
+      <SidebarButton label="Party songs" />
+      <SidebarButton label="Gaming" flag={BsVolumeUp} onHoverFlag={BsPause} />
+      <SidebarButton label="Fresh start" />
+      <SidebarButton label="After midnight" />
+      <SidebarButton label="Calm Days" />
+      <SidebarButton label="Comfort zone" />
+      <SidebarButton label="Country Summer Nights" />
+      <SidebarButton label="Coffee Alone" />
+      <SidebarButton label="Feel Good Songs" />
+      <SidebarButton label="Heart Waves" />
+
     </PlaylistButtonsWraper>
   </Bar>
 }

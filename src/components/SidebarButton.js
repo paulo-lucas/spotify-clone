@@ -1,12 +1,28 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 
 const SidebarIconButton = props => {
-  const { icon: Icon, label } = props
+  const [hover, setHover] = useState(false)
 
-  return <Button {...props} >
+  const {
+    icon: Icon,
+    flag: Flag,
+    onHoverFlag: OnHoverFlag,
+    label
+  } = props
+
+  return <Button {...props}>
+
     {Icon && <IconWrapper><Icon size={24} /></IconWrapper>}
+
     {label}
+
+    {Flag && <FlagWrapper
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)} >
+      {(hover && OnHoverFlag) ? <OnHoverFlag size={24} /> : <Flag size={24} />}
+    </FlagWrapper>}
+
   </Button>
 }
 
@@ -37,6 +53,12 @@ const Button = styled.button`
 
 const IconWrapper = styled.div`
   margin-right: 18px;
+`
+
+const FlagWrapper = styled.div`
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
 `
 
 export default SidebarIconButton

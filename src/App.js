@@ -56,6 +56,7 @@ const MainWrapper = styled.main`
   display: flex;
   flex-flow: row nowrap;
   width: 100vw;
+  overflow: hidden;
 `
 
 export default App;
