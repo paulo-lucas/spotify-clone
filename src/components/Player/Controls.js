@@ -52,7 +52,13 @@ const ButtonControlsWrapper = styled.div`
 
   & > * {
     margin: 0 16px;
+    opacity: 0.7;
+    cursor: pointer;
     color: ${({ theme }) => theme.colors.text.active};
+  }
+
+  & > *:hover {
+    opacity: 1;
   }
 
   & > *:first-child {
@@ -62,13 +68,33 @@ const ButtonControlsWrapper = styled.div`
 
 const ProgressBarWrapper = styled.div`
   width: 100%;
-  padding: 0 24px;
+  padding: 12px 24px;
   display: flex;
   align-items: center;
 
   span {
     color: ${({ theme }) => theme.colors.text.default};
     font-size: 12px;
+  }
+
+
+  &:hover {
+    .progress {
+      background-color: ${({ theme }) => theme.colors.detail};
+      overflow: visible;
+    }
+
+    .progress::after {
+      content: " ";
+      background-color: ${({ theme }) => theme.colors.text.active};
+      position: absolute;
+      right: -6px;
+      top: -4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 8px;
+      z-index: 1;
+    }
   }
 `
 
@@ -77,12 +103,13 @@ const ProgressBar = styled.div`
   margin: 0 16px;
   height: 4px;
   border-radius: 4px;
-  overflow: hidden;
   background-color: ${({ theme }) => theme.colors.bgSelected};
 
   .progress {
+    border-radius: 4px 0 0 4px;
     height: 4px;
     width: 40%;
+    position: relative;
     background-color: ${({ theme }) => theme.colors.text.default};
   }
 `
