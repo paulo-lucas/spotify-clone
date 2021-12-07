@@ -49,12 +49,12 @@ const Center = styled.div`
 const ButtonControlsWrapper = styled.div`
   display: flex;
   align-items: center;
+  color: ${({ theme }) => theme.colors.text.active};
 
   & > * {
     margin: 0 16px;
     opacity: 0.7;
     cursor: pointer;
-    color: ${({ theme }) => theme.colors.text.active};
   }
 
   & > *:hover {

@@ -38,7 +38,7 @@ const Container = styled.div`
   width: 240px;
   height: 100%;
   position: relative;
-  overflow: ${({ expanded }) => expanded ? "visible" : "hidden"}
+  overflow: ${({ expanded }) => expanded ? "visible" : "hidden"};
 `
 
 const CollapseWrapper = styled.div`
